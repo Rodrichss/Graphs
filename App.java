@@ -32,9 +32,9 @@ public class App {
         System.out.println("Grafo 1");
         g1.print();
 
-        System.out.println("Ingrese el índice del nodo desde el que quiere iniciar");
+        System.out.print("Ingrese el índice del nodo desde el que quiere iniciar: ");
         int inicio = sc.nextInt();
-        System.out.println("Ingrese el índice del nodo al que quiere llegar");
+        System.out.print("Ingrese el índice del nodo al que quiere llegar: ");
         int fin = sc.nextInt();
         g1.shortestPath(inicio, fin);
     }

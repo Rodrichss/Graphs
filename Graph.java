@@ -45,7 +45,6 @@ public class Graph {
 
         int actual = inicio;
         
-        System.out.println(actual);
         explored[actual] = true;
         pesoViaje[actual] = 0;
 
@@ -62,9 +61,13 @@ public class Graph {
             for(int k=0;k<pesoViaje.length;k++){
                 if((shortest==-1||pesoViaje[k]<pesoViaje[shortest])&&!explored[k]){
                     shortest = k;
+                    actual = shortest;
                 }
             }
-
+            explored[actual] = true;
+            if(actual==fin){
+                break;
+            }
         }
         System.out.println("Peso del camino más corto: " + pesoViaje[fin]);
 
