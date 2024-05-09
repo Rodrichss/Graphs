@@ -32,6 +32,10 @@ public class App {
         System.out.println("Grafo 1");
         g1.print();
 
+        System.out.println("Búsqueda de ejemplo\nCamino más corto del nodo 1 a nodo 2 (ÍNDICE ES NODO-1, POR EJEMPLO AQUÍ ES DE 0 A 1)");
+        g1.shortestPath(0,1);
+        System.out.println("");
+
         System.out.print("Ingrese el índice del nodo desde el que quiere iniciar: ");
         int inicio = sc.nextInt();
         System.out.print("Ingrese el índice del nodo al que quiere llegar: ");
